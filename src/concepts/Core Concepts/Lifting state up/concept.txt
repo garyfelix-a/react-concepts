@@ -1,0 +1,5 @@
+
+Lifting state up in react:
+
+- "Lifting state up" allows the state to be managed in a single place and passed down to the child components via props
+- Why lift state up? - to share state between components and to make the state management concept centralized.
