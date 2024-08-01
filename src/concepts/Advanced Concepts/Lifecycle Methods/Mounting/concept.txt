@@ -1,0 +1,35 @@
+Mounting: 
+
+Definition: 
+    - methods are called when the instance of the component is created and inserted into the DOM.
+    - Has several methods, they are
+        -> constructor (props) - this will get called whenever a new component is created
+                               - this is used for initializing a state or binding the event handlers
+                               - Do not cause side effects. (i.e., do not make HTTP requests in constructors)
+                               - Eg., constructor(props) {
+                                        super(props);
+                                        this.state = { count: 0 };
+                                      }
+        -> static getDerivedStateFromProps (props, state) - called before the rendering
+                                                          - used to update the state or set the state based on props
+                                                          - rarely used lifecycle method
+                                                          - Do not cause side effects. (i.e., do not make HTTP requests)
+                                                          - E.g.,  static getDerivedStateFromProps(props, state) {
+                                                                        // Return an object to update state, or null to update nothing
+                                                                        return null;
+                                                                    }
+
+        -> render() - it is the only required method in the class component
+                    - return the JSX to be rendered in the DOM.
+                    - read props & state and return JSX
+                    - Do not change state or interact with DOM or make AJAX calls.
+                    - E.g., render(){
+                                return <div>{this.state.count}</div>
+                            }
+
+        -> componentDidMound() - called only once when the component is rendered 
+                               - this method is executed when all the methods and child components are executed.
+                               - used for side effects like data fetching, AJAX Calls, subscriptions, etc. 
+                               - E.g., componentDidMound(){
+                                            // Fetch Data, add event listeners, etc.  
+                                       }

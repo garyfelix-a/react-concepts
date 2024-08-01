@@ -1,0 +1,10 @@
+Unmounting phase
+
+Definition:
+    methods that are called when a component is being removed from the DOM
+
+methods in Unmounting phase
+
+->componentWillUnmount()
+    - called before the component is being unmounted and destroyed
+    - used for cleanup (i.e., removing event listeners, canceling network requests)

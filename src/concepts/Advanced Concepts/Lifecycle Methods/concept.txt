@@ -1,0 +1,6 @@
+There are three main phases of lifecycle methods in react. They are 
+    1. Mounting
+    2. Updating
+    3. Unmounting
+    4. Error Handling (Optional)
+

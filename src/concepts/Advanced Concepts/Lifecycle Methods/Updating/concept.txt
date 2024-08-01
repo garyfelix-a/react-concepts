@@ -1,0 +1,32 @@
+Updating lifecycle
+
+Definition:
+    methods are called when a component is being re-rendered due to changes in props or state
+
+methods in Updating lifecycle
+
+->static getDerivedStateFromProps(props, state)
+    - same as in the mounting phase
+->shouldComponentUpdate(nextProps, nextState)
+    - determines if the component should re-rendered
+    - used for performance optimization
+    - E.g., shouldComponentUpdate(nextProps, nextState){
+                // Return true to update, false to skip
+                return true;
+            }
+->render()
+    - same as in the mounting phase
+->getSnapshotBeforeUpdate(prevProps, prevState)
+    - Called before the changes from the Virtual DOM are applied to the DOM.
+    - used to capture some information from the DOM before it changes
+    - E.g., getSnapshotBeforeUpdate(prevProps, prevState) {
+                // Capture information (like scroll position)
+                return null;
+            }
+->componentDidUpdate(prevProps, prevState, snapshot)
+    - called after the component is updated
+    - used for side effects that need to happen after the DOM is updated
+    - E.g., componentDidUpdate(prevProps, prevState, snapshot){
+                //perform operations with updated DOM
+            }
+
