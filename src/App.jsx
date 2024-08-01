@@ -1,11 +1,13 @@
 import './App.css'
-import { LiftingStateUp } from './concepts/Core Concepts/Lifting state up/LiftingStateUp'
+import { Composition } from './concepts/Core Concepts/Composition vs Inheritance/Composition'
+// import { LiftingStateUp } from './concepts/Core Concepts/Lifting state up/LiftingStateUp'
 
 function App() {
 
   return (
     <>
-        <LiftingStateUp />
+        {/* <LiftingStateUp /> */}
+        <Composition />
     </>
   )
 }

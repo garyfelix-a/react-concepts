@@ -1,0 +1,26 @@
+Composition: 
+
+Definition: 
+    Composition is a design principle where complex systems are constructed by combining simpler, reusable components together.
+
+How it works: 
+1. Functional Components - Create small, reusable components.
+2. Combine Components - Use these components as building blocks within other components.
+3. Props and Children - Pass data and other components via props and children
+
+Where it is used: 
+1. Reusable Components: Creating small, self-contained components that can be reused across different parts of an application.
+2. Component Hierarchies: Building complex UIs by nesting components within each other.
+3. Higher-Order Components (HOCs): Functions that take a component and return a new component with added behavior.
+
+Inheritance: 
+
+Definition:
+    Inheritance is an object-oriented programming principle where a class can inherit properties and methods from another class.
+
+How it works: 
+1. Extending Classes: You create a base class and extend it to create new classes with additional functionality.
+2. Shared Behavior: Common behavior is defined in the base class and inherited by subclasses
+
+Where it is used: 
+Legacy Code: Some older React codebases may use inheritance, but it's generally discouraged in favor of composition.
